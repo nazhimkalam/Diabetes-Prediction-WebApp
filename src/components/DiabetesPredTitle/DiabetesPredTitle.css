@@ -6,8 +6,8 @@
 }
 .lungCancerPredictionTitle > h2 {
 	padding: 20px;
-	border-top: 1px red solid;
-	color: rgb(255, 0, 0);
+	border-top: 1px rgb(173, 0, 173) solid;
+	color: rgb(180, 0, 180);
 }
 .lungCancerPredictionTitle > p {
 	padding: 10px;

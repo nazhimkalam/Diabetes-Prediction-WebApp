@@ -3,19 +3,35 @@
 	display: flex;
 	flex-direction: column;
 }
-.about > p {
-	margin: 15px;
-	text-align: justify;
-    text-justify: inter-word;
-    color: rgb(24, 24, 24);
-}
-.about__images{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+
+.about__images {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 .about__images > img {
 	object-fit: contain;
-    height: 200px;
-    margin: 60px;
+	height: 400px;
+	margin: 60px;
+}
+
+.about__about,
+.about__common,
+.about__healthProblems {
+	margin: 10px;
+}
+.about__about > p,
+.about__common > p,
+.about__healthProblems > p {
+	margin: 15px;
+	font-size: 17px;
+	text-align: justify;
+	text-justify: inter-word;
+}
+.about__healthProblemsList {
+	font-size: 17px;
+	margin: 20px;
+}
+.about__healthProblemsList>p{
+    margin: 5px 0px;
 }

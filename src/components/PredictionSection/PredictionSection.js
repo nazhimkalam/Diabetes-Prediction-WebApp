@@ -69,7 +69,9 @@ function PredictionSection() {
 
 			{/* result */}
 			{result && (
-				<div className="predictionSection__result">
+				<div
+					className={result === 'Positive' ? 'predictionSection__resultPositive' : 'predictionSection__resultNegative'}
+				>
 					<h3>prediction: {result}</h3>
 				</div>
 			)}

@@ -1,9 +1,10 @@
 .footer{
-    border: 1px solid rgb(238, 238, 238);
-    background-color: whitesmoke;
+    border: 1px solid rgb(32, 0, 121);
+    background-color: rgb(0, 66, 92);
     height: 100px;
     display: flex;
     margin-top: 50px;
+    color: white;
     font-weight: 600;
     justify-content: center;
     align-items: center;

@@ -1,12 +1,12 @@
 .mainTitle {
 	display: flex;
 	width: 100%;
-	border: 1px solid rgb(238, 238, 238);
-    background-color: whitesmoke;
+	border: 1px solid rgb(32, 0, 121);
+    background-color: rgb(0, 66, 92);
 	align-items: center;
 	justify-content: center;
 }
 .mainTitle > h1 {
     margin: 20px;
-    color: red;
+    color: white;
 }

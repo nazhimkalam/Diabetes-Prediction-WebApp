@@ -1,8 +1,8 @@
-import { useState } from 'react';
+
 import './App.css';
 import About from './components/About/About';
+import DiabetesPredTitle from './components/DiabetesPredTitle/DiabetesPredTitle';
 import Footer from './components/Footer/Footer';
-import LungCancerPredTitle from './components/LungCancerPredTitle/LungCancerPredTitle';
 import MainTitle from './components/MainTitle/MainTitle';
 import PredictionSection from './components/PredictionSection/PredictionSection';
 
@@ -11,7 +11,7 @@ function App() {
 		<div className="app">
 			<MainTitle />
 			<About />
-			<LungCancerPredTitle />
+			<DiabetesPredTitle />
 			<PredictionSection />
 			<Footer />
 		</div>

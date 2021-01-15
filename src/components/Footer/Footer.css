@@ -1,0 +1,11 @@
+.footer{
+    border: 1px solid rgb(238, 238, 238);
+    background-color: whitesmoke;
+    height: 100px;
+    display: flex;
+    margin-top: 50px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

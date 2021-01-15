@@ -1,0 +1,12 @@
+.mainTitle {
+	display: flex;
+	width: 100%;
+	border: 1px solid rgb(238, 238, 238);
+    background-color: whitesmoke;
+	align-items: center;
+	justify-content: center;
+}
+.mainTitle > h1 {
+    margin: 20px;
+    color: red;
+}

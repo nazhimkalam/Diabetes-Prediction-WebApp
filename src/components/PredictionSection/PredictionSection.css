@@ -10,7 +10,12 @@
 	padding: 5px;
 	justify-content: space-between;
 }
-
+.predictionSection{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
 input {
 	width: 50px;
 	margin-left: 10px;
@@ -21,24 +26,28 @@ input {
 	padding: 5px;
 	margin: 20px 0;
 	float: right;
-	background-color: rgb(185, 0, 0);
+	background-color:rgb(158, 0, 158);
 	outline: none;
 	border-radius: 5px;
-	border: 2px red solid;
+	border: 2px rgb(202, 0, 202) solid;
 	cursor: pointer;
 	color: white;
 	font-weight: 600;
 }
 .predictionSection__range {
-	/* border: 1px grey solid; */
-    display: flex;
-    padding: 10px;
+	border: 1px rgb(255, 161, 255) solid;
+	display: flex;
+	width: 500px;
+    padding: 15px;
     flex-direction: column;
-	align-items: center;
 	justify-content: center;
 }
-.predictionSection__range > p {
+.predictionSection__range > p > span{
 	font-weight: 700;
+	color: red;
+}
+.predictionSection__range > p {
+	font-weight: 500;
 	font-size: 17px;
 }
 .predictionSection__rule{
@@ -49,21 +58,7 @@ input {
 .predictionSection__rule > p{
     padding: 2px;
 }
-.predictionSection__rangeScores{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    align-items: center;
-	border: 2px rgb(255, 207, 207) solid;
-    flex-wrap: wrap;
-    height: 60px;
-    padding: 10px;
-}
-.predictionSection__rangeScores > p{
-    font-weight: 700;
-    font-size: 14px;
-    color: red;
-}
+
 .predictionSection__result{
     display: flex;
     align-items: center;

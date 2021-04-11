@@ -1,30 +1,15 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# # Flask Backend for Diabetes Prediction Modal
-
-# In[5]:
-
 
 # Make sure that all the following modules are already installed for use.
+import joblib
+import numpy as np
 from flask import Flask
 from flask_cors import CORS
 from flask_restful import Api, Resource, reqparse
-import joblib
-import numpy as np
-
-
-# In[6]:
-
 
 APP = Flask(__name__)
 APP.config['CORS_HEADERS'] = 'Content-Type'
 CORS(APP)
 API = Api(APP)
-
-
-# In[7]:
-
 
 DIABETIES_PREDICTION_MODEL = joblib.load('diabeties-pred-model.pkl')
 
@@ -64,28 +49,28 @@ class Predict(Resource):
 API.add_resource(Predict, '/predict')
 
 if __name__ == '__main__':
-    APP.run(debug=True, port=1080)
+    APP.run(debug=True)
 
 
 # In[ ]:
 
 
-import requests
+# import requests
 
-URL = 'http://127.0.0.1:1080/predict'  # localhost and the defined port + endpoint
+# URL = 'http://127.0.0.1:1080/predict'  # localhost and the defined port + endpoint
 
-body = {
-    "Pregnancies": 6,
-    "Glucose": 188,
-    "BloodPressure": 72,
-    "SkinThickness": 35,
-    "Insulin": 168,
-    "BMI": 33.6,
-    "DiabetesPedigreeFunction": 0.627,
-    "Age": 50
+# body = {
+#     "Pregnancies": 6,
+#     "Glucose": 188,
+#     "BloodPressure": 72,
+#     "SkinThickness": 35,
+#     "Insulin": 168,
+#     "BMI": 33.6,
+#     "DiabetesPedigreeFunction": 0.627,
+#     "Age": 50
     
-}
+# }
 
-response = requests.post(URL, data=body)
-response.json()
+# response = requests.post(URL, data=body)
+# response.json()
 
